@@ -4,17 +4,17 @@ static const Block blocks[] = {
 
 	//{"󰂄 ", "cat /sys/class/power_supply/BAT1/capacity",					300,		0},
 
-	{"", "~/suckless/dwmblocks/scripts/dwm_battery.sh",					300,		1},
+	{"", "~/suckless/dwmblocks/scripts/dwm_battery.sh",					5,		35},
 
-	{"  ", "amixer get Master | awk -F'[][]' '/Left:/ {print $2}'",					1,		5},
+	{"  ", "amixer get Master | awk -F'[][]' '/Left:/ {print $2}'",					1,		10},
 
-	{"", "~/suckless/dwmblocks/scripts/dwm_weather.sh",					1800,		2},
+	{"", "~/suckless/dwmblocks/scripts/dwm_weather.sh",					900,		36},
 
-	{"", "~/suckless/dwmblocks/scripts/wlnet",					5,		3},
+	{"", "~/suckless/dwmblocks/scripts/wlnet.sh",					5,		37},
 
 	{"Mem:", "free -h | awk '/^Mem/ { print $3\"/\"$2 }' | sed s/i//g",	30,		0},
 
-	{"", "date '+%b %d (%a) %I:%M%p'",					5,		4},
+	{"", "date '+%b %d (%a) %I:%M%p'",					5,		0},
 
 };
 
